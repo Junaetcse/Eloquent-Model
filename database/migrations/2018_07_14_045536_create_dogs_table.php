@@ -3,7 +3,8 @@
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
-class CreateTableDogs extends Migration
+
+class CreateDogsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -15,6 +16,7 @@ class CreateTableDogs extends Migration
         Schema::create('dogs', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->integer('age')->nullable();
             $table->timestamps();
         });
     }

@@ -13,9 +13,9 @@ class DogsTableSeeder extends Seeder
     {
         //
         \App\Dog::truncate();
-        \App\Dog::create(['name' => 'Joe']);
-        \App\Dog::create(['name' => 'Jock']);
-        \App\Dog::create(['name' => 'Jackie']);
-        \App\Dog::create(['name' => 'Jane']);
+        \App\Dogs::create(['name' => 'Joe', 'age' => 5 ]);
+        \App\Dogs::create(['name' => 'Jock', 'age' => 7 ]);
+        \App\Dogs::create(['name' => 'Jackie', 'age' => 2 ]);
+        \App\Dogs::create(['name' => 'Jane', 'age' => 9 ]);
     }
 }
